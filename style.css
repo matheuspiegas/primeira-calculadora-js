@@ -1,0 +1,104 @@
+.calculadora {
+    background-color: rgba(0, 0, 0, 0.863);
+    width: 500px;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes {
+    margin: 0 auto;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 40px);
+    grid-template-areas:    
+        "c c d x"
+        "sete oito nove menos"
+        "quatro cinco seis mais"
+        "um dois tres igual"
+        "zero zero virgula igual"
+    
+    ;
+}
+button {
+    border-radius: 5px;
+    border: none;
+    background: rgb(42, 35, 66);
+    color: white;
+}
+button:hover {
+    background: rgb(46, 41, 65);
+    color: black; 
+}
+
+#visor {
+    margin: 10px 0px;
+    border-radius: 5px;
+    border: none;
+    width: 82%;
+    height: 30px;
+    background-color: white;
+    color: black;
+}
+
+.c {
+    grid-area: c;
+}
+.d {
+    grid-area: d;
+}
+.x {
+    grid-area: x;
+}
+.sete {
+    grid-area: sete;
+}
+.oito {
+    grid-area: oito;
+}
+.nove {
+    grid-area: nove;
+}
+.menos {
+    grid-area: menos;
+}
+.quatro {
+    grid-area: quatro;
+}
+.cinco {
+    grid-area: cinco;
+}
+.seis {
+    grid-area: seis;
+}
+.mais {
+    grid-area: mais;
+}
+.um {
+    grid-area: um;
+}
+.dois {
+    grid-area: dois;
+}
+.tres {
+    grid-area: tres;
+}
+.zero {
+    grid-area: zero;
+}
+.virgula {
+    grid-area: virgula;
+}
+.igual {
+    grid-area: igual;
+}
